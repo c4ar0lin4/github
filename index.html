@@ -1,0 +1,12 @@
+<script>
+    async function verPerfilGithub(nomeDoUsuario) {
+        const resultado = await getch(
+            'https://api.github.com/users/${nomeDoUsuario}'
+        );
+        const dados = await resultado.json()
+        console.log(dados);
+    }
+    verPerilgithub("123")
+</script>
+</tbody>
+</html>
